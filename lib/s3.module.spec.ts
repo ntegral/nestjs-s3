@@ -8,22 +8,22 @@ import * as S3 from 'aws-sdk/clients/s3';
 
 describe('S3Module', () => {
     let config: S3ConfigOptions = {
-        accessKeyId:'---your access key---',
+        accessKeyId: '---your access key---',
         secretAccessKey: '---your secret access key---',
-    }
+    };
 
     class TestService implements S3ConfigOptionsFactory {
         createS3ConfigOptions(): S3ConfigOptions {
             return config;
         }
-    }
+    };
 
     let s3config: S3ConfigOptions = {
-        accessKeyId:'---your access key---',
+        accessKeyId: '---your access key---',
         secretAccessKey: '---your secret access key---',
         apiVersion: '2006-03-01',
         sessionToken: undefined
-    }
+    };
 
     class S3TestService implements S3ConfigOptionsFactory {
         createS3ConfigOptions(): S3ConfigOptions {
