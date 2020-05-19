@@ -5,7 +5,8 @@ export interface S3ConfigOptions {
     secretAccessKey: string;
     region?: string;
     sessionToken?: string;
-    apiVersion?: string
+    apiVersion?: string;
+    maxSockets?: number;
 }
 
 export interface S3ConfigOptionsFactory {
