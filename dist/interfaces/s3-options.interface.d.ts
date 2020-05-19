@@ -5,6 +5,7 @@ export interface S3ConfigOptions {
     region?: string;
     sessionToken?: string;
     apiVersion?: string;
+    maxSockets?: number;
 }
 export interface S3ConfigOptionsFactory {
     createS3ConfigOptions(): Promise<S3ConfigOptions> | S3ConfigOptions;
